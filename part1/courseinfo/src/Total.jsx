@@ -1,4 +1,4 @@
 const Total = (props) => {
-  return <p>total number of exercises: {props.totalExercises}</p>;
+  return <h4>Total number of exercises: {props.totalExercises}</h4>;
 };
 export default Total;
