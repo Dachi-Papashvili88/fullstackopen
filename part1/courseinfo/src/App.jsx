@@ -10,6 +10,7 @@ const App = () => {
   const exercises2 = 7;
   const part3 = "State of a component";
   const exercises3 = 14;
+  const totalExercises = exercises1 + exercises2 + exercises3;
 
   return (
     <>
@@ -22,6 +23,7 @@ const App = () => {
         part3={part3}
         exercises3={exercises3}
       />
+      <Total totalExercises={totalExercises} />
     </>
   );
 };
