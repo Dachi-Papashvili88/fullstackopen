@@ -1,11 +1,8 @@
-const StatisticLine = ({ text, value }) => {
-  return (
-    <>
-      <h4>
-        {text}: {value}
-      </h4>
-    </>
-  );
-};
+const StatisticLine = ({ text, value }) => (
+  <tr>
+    <td>{text} </td>
+    <td>{value}</td>
+  </tr>
+);
 
 export default StatisticLine;
