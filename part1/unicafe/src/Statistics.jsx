@@ -1,3 +1,4 @@
+import StatisticLine from "./StatisticLine";
 const Statistics = ({ good, neutral, bad }) => {
   const feedback = good + neutral + bad;
 
@@ -12,9 +13,9 @@ const Statistics = ({ good, neutral, bad }) => {
   return (
     <>
       <h1>statistics</h1>
-      <h4>good {good}</h4>
-      <h4>neutral {neutral}</h4>
-      <h4>bad {bad}</h4>
+      <StatisticLine text="good" value={good} />
+      <StatisticLine text="neutral" value={neutral} />
+      <StatisticLine text="bad" value={bad} />
       <h4>all {good + neutral + bad}</h4>
       <h4>
         average{" "}
